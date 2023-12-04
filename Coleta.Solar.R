@@ -1,6 +1,6 @@
 # Diretório
 #setwd("~/Rafael_Estudo/PUC/CTG/Relatório Agosto/Solar")
-setwd("C:/Users/amiun/OneDrive/Área de Trabalho/Anderson/Doutorado/Ninja_Renewables")
+setwd("C:/Users/amiun/Desktop/ProjetoGit/Doutorado/Download_Dados")
 
 # Pacotes
 install.packages("zoo")
@@ -30,10 +30,10 @@ handle_setheaders(h, 'Authorization'=paste('Token', token))
 
 
 # Coordenadas e Parametros
-latitude = -5.2615
-longitude = -37.9695
+latitude = -10.1109434794444
+longitude = -45,2825499805556
 perda = 0.14
-Potencia = 30933
+Potencia = 790000
 monitoramento = 2
 inclinacao = 0
 direcao = 0
@@ -117,7 +117,7 @@ dados <- Tratamento(dados)
 
 
 # Salvando
-write.xlsx(dados,"Alex_Rad.xlsx")
+write.xlsx(dados,"São Gonçalo_PI_Rad.xlsx")
 
 dados <- dados_orig
 
@@ -140,7 +140,7 @@ dados <- Tratamento(dados)
 
 
 # Salvando
-write.xlsx(dados,"Alex_ger.xlsx")
+write.xlsx(dados,"São Gonçalo_PI_ger.xlsx")
 
 
 
